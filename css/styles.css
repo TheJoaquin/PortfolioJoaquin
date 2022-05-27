@@ -1,0 +1,177 @@
+.navbar{
+	left:30vw;
+}
+
+nav {
+	overflow: hidden;
+	background-color: #fff;
+	/* border-radius: 8px; */
+	margin: 15px auto 0; 
+	position: fixed;
+	width: 590px;
+	height: 50px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1c7293;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #2a9d8f;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #e9c46a;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #f4a261;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #e76f51;
+}
+
+/* body { black mode
+	font-size: 12px;
+	font-family: sans-serif;
+	background: #2c3e50;
+} */
+
+
+
+/* Styles for my name */
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mySelf { 
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Zen Loop', cursive;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+}
+
+.description{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 42px;
+    margin: 0;
+    width: 400px;
+}
+
+.findMy{
+	text-align: center;
+}
+
+
+.linkedin{
+	width: 36px;
+}
+
+.linkedin:hover{
+	width: 36px;
+	filter:invert(28%) sepia(76%) saturate(4871%) hue-rotate(184deg) brightness(94%) contrast(101%);
+}
+
+.github{
+	width: 36px;
+}
+
+.github:hover{
+	width: 36px;
+	filter: invert(34%) sepia(11%) saturate(2226%) hue-rotate(222deg) brightness(100%) contrast(88%);
+}
+
+
+
+/* About Me Seccion */
+ .flex-container{
+	 display: flex;
+	 justify-content: space-around;
+ }
+
+h2{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: #1c7293;
+}
+
+p{
+	margin: 100px 30px 15px 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	width: 800px;
+}
+
+.photo{
+	margin: 0 0 0 0;
+	width: 300px;
+}
+
+span{
+	display: block;
+	padding-bottom: 15px;
+}
+
+.resume{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	padding: 6px 12px;
+	border: 1px solid #e76f51;
+	border-radius: 5px;
+	background-color: transparent;
+	transition-duration: 0.4s;
+}
+
+.resume:hover{
+	background-color: #e76f51;
+	color: white;
+}
